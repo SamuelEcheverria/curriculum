@@ -1,16 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Curriculum</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <h1>Mi Curriculum</h1>
-        <p>Esto es una prueba sencilla para verificar que el despliegue se ve en la web.</p>
-        <p>Si estás viendo esta página, el despliegue funciona.</p>
+        <p>Bienvenido a mi página personal donde se presenta información profesional y académica.</p>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy una persona motivada y organizada, con interés en aprender nuevas tecnologías y mejorar habilidades
+                profesionales.</p>
+        </section>
+        <section id="experiencia">
+            <h2>Experiencia</h2>
+            <p>Tengo experiencia en trabajos de equipo y proyectos prácticos que requieren responsabilidad y constancia.
+            </p>
+        </section>
+        <section id="educacion">
+            <h2>Educación</h2>
+            <p>He completado estudios básicos y actualmente estoy cursando la carrera de Ingeniería en Ciencias de la
+                Computación .</p>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <p>Poseo habilidades en comunicación, resolución de problemas, gestión del tiempo y trabajo colaborativo con
+                herramientas digitales.</p>
+        </section>
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>He participado en proyectos personales y académicos donde se diseñaron soluciones creativas y se
+                aplicaron buenas prácticas.</p>
+        </section>
+        <section id="video">
+            <h2>Video de prueba</h2>
+            <div class="video-container">
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/sZOohNzBkvA" title="Video de prueba" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
+    <footer>
+        <p>Contacto: samueljecheverria0717@gmail.com | Teléfono: +593 600 000 000</p>
+    </footer>
 </body>
+
 </html>
