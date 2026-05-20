@@ -5,7 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Curriculum</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <style>
+        * {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,40 +31,41 @@
     </header>
     <main>
         <h1>Mi Curriculum</h1>
+        <img id="photo" src="https://imgs.search.brave.com/7tkIXSKHe6jrt4GSDke-K2XM5rYV0PuN2VsrFHJAlX0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YmFyY2Vsb25hc2Mu/Y29tLmVjL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI2LzAxL2Vz/Y3Vkby13ZWItMjAy/Ni5wbmc" alt="Foto genérica">
         <p>Bienvenido a mi página personal donde se presenta información profesional y académica.</p>
         <section id="sobre-mi">
-            <h2>Sobre mí</h2>
+            <h2 class="subtitle">Sobre mí</h2>
             <p>Soy una persona motivada y organizada, con interés en aprender nuevas tecnologías y mejorar habilidades
                 profesionales.</p>
         </section>
         <section id="experiencia">
-            <h2>Experiencia</h2>
+            <h2 class="subtitle">Experiencia</h2>
             <p>Tengo experiencia en trabajos de equipo y proyectos prácticos que requieren responsabilidad y constancia.
             </p>
         </section>
         <section id="educacion">
-            <h2>Educación</h2>
+            <h2 class="subtitle">Educación</h2>
             <p>He completado estudios básicos y actualmente estoy cursando la carrera de Ingeniería en Ciencias de la
                 Computación .</p>
         </section>
         <section id="habilidades">
-            <h2>Habilidades</h2>
+            <h2 class="subtitle">Habilidades</h2>
             <p>Poseo habilidades en comunicación, resolución de problemas, gestión del tiempo y trabajo colaborativo con
                 herramientas digitales.</p>
         </section>
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2 class="subtitle">Proyectos</h2>
             <p>He participado en proyectos personales y académicos donde se diseñaron soluciones creativas y se
                 aplicaron buenas prácticas.</p>
         </section>
         <section id="video">
-            <h2>Video de prueba</h2>
+            <h2 class="subtitle">Video de prueba</h2>
             <div class="video-container">
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/sZOohNzBkvA" title="Video de prueba" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2 class="subtitle">Contacto</h2>
             <form action="#" method="post">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
