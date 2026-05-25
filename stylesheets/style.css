@@ -89,6 +89,63 @@ color: orange;
     color: #ffffff;
 }
 
+#contacto {
+    text-align: center;
+}
+
+#contacto .contact-box {
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #d8dee9;
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contacto label {
+    text-align: left;
+    font-weight: 400;
+    color: #272343;
+}
+
+#contacto input,
+#contacto textarea {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border: 1px solid #cbd2e0;
+    border-radius: 10px;
+    background-color: #f7f9ff;
+    font-size: 0.95rem;
+    color: #1f2937;    box-sizing: border-box;}
+
+#contacto textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contacto button[type="submit"] {
+    align-self: center;
+    padding: 0.85rem 1.8rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #001858;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+#contacto button[type="submit"]:hover {
+    background-color: #001140;
+}
+
 #sobre-mi .sobre-mi-text,
 #habilidades p {
     text-align: center;
