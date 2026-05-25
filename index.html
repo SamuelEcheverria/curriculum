@@ -6,63 +6,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Curriculum</title>
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+e2vG5q0x+ERFvY9Ix1zd+SsL+9M/lXZ0fINcP0wY=" crossorigin="" />
     <style>
         * {
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
         h1 {
-            text-align: center;
+            text-align: left;
             font-weight: bold;
+            margin: 0;
         }
     </style>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-o9N1j7k6eS0+M6pBuhVd7kkzJQK/9O7oH6N5WcC7F6I=" crossorigin=""></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-            </ul>
-        </nav>
+    <header class="page-header">
+        <div class="header-top">
+            <div>
+                <h1>Curriculum Vitae</h1>
+                <p class="header-name">Samuel Echeverría</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#referencias">Referencias</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <h1>Mi Curriculum</h1>
-        <img id="photo" src="https://imgs.search.brave.com/7tkIXSKHe6jrt4GSDke-K2XM5rYV0PuN2VsrFHJAlX0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YmFyY2Vsb25hc2Mu/Y29tLmVjL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDI2LzAxL2Vz/Y3Vkby13ZWItMjAy/Ni5wbmc" alt="Foto genérica">
-        <p>Bienvenido a mi página personal donde se presenta información profesional y académica.</p>
+       
         <section id="sobre-mi">
             <h2 class="subtitle">Sobre mí</h2>
-            <p>Soy una persona motivada y organizada, con interés en aprender nuevas tecnologías y mejorar habilidades
-                profesionales.</p>
+            <div class="sobre-mi-content">
+                <img id="photo" src="img/foto.png" alt="Foto personal">
+                <div class="sobre-mi-text">
+                    <p>Soy un desarrollador web con experiencia en tecnologías modernas. Me motiva entender cómo interactúan los usuarios 
+                        con las aplicaciones y crear soluciones que sean intuitivas y eficientes. Me gusta aprender nuevas tecnologías y mejorar mis habilidades constantemente.
+                    </p>
+                </div>
+            </div>
         </section>
-        <section id="experiencia">
-            <h2 class="subtitle">Experiencia</h2>
-            <p>Tengo experiencia en trabajos de equipo y proyectos prácticos que requieren responsabilidad y constancia.
-            </p>
+
+        <section id="proyectos">
+            <h2 class="subtitle">Proyectos</h2>
+            <h3 class="proyecto-title">Aplicación web de gestión de inventario</h3>
+            <a href="https://github.com/SamuelEcheverria/jatif" target="_blank" class="proyecto-link">Ver en GitHub</a>
+            <div class="video-container">
+                <video width="640" height="360" controls>
+                    <source src="video/grabacion-2026-05-25T17-00-12.webm" type="video/webm">
+                    Tu navegador no soporta video HTML5.
+                </video>
+            </div>
         </section>
+        
         <section id="educacion">
             <h2 class="subtitle">Educación</h2>
-            <p>He completado estudios básicos y actualmente estoy cursando la carrera de Ingeniería en Ciencias de la
-                Computación .</p>
+            <div class="educacion-grid">
+                <div class="educacion-item">
+                    <img src="img/anai-logo-png_seeklogo-8684.png" alt="Educación básica y bachillerato">
+                    <h4>Educación básica y bachillerato</h4>
+                    <p class="educacion-time">2011 - 2023</p>
+                </div>
+               
+                  <div class="educacion-item">
+                    <img src="img/Excel-Logo-PNG-Photos.webp" alt="Excel">
+                    <h4>Certificación Excel Expert</h4>
+                    <p class="educacion-time">2023</p>
+                </div>
+                
+                <div class="educacion-item">
+                    <img src="img/be0c1efb11f43780ec46dafd28765681.webp" alt="Espol">
+                    <h4>Escuela Superior Politécnica del Litoral</h4>
+                    <p class="educacion-description">Ingeniería en Ciencias de la Computación</p>
+                    <p class="educacion-time">2023 - Actualidad</p>
+                </div>
+
+                <div class="educacion-item">
+                    <img src="img/logo-cisco-systems-font-brand-product-logo-hmi.png" alt="Cisco">
+                    <h4>Certificación Cisco - Introducción a la Redes</h4>
+                    <p class="educacion-time">2026</p>
+                </div>
+              
+                
+            </div>
         </section>
         <section id="habilidades">
             <h2 class="subtitle">Habilidades</h2>
             <p>Poseo habilidades en comunicación, resolución de problemas, gestión del tiempo y trabajo colaborativo con
-                herramientas digitales.</p>
+                herramientas digitales.
+                Además, poseo habilidades en programación y diseño web orientado a la experiencia del usuario.</p>
         </section>
-        <section id="proyectos">
-            <h2 class="subtitle">Proyectos</h2>
-            <p>He participado en proyectos personales y académicos donde se diseñaron soluciones creativas y se
-                aplicaron buenas prácticas.</p>
+        
+        <section id="referencias">
+            <h2 class="subtitle">Referencias</h2>
+            <article>Jose Lindao — +593 987 654 321</article>
+            <article>Marco Silva — +593 912 345 678</article>
+            <article>Miriam Flores — +593 999 111 222</article>
         </section>
-        <section id="video">
-            <h2 class="subtitle">Video de prueba</h2>
-            <div class="video-container">
-                <iframe width="640" height="360" src="https://www.youtube.com/embed/sZOohNzBkvA" title="Video de prueba" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+        <section id="direccion">
+            <h2 class="subtitle">Mi dirección</h2>
+            <div id="map"></div>
+            <p>Guayaquil, Ecuador</p>
         </section>
         <section id="contacto">
             <h2 class="subtitle">Contacto</h2>
@@ -81,8 +130,25 @@
         </section>
     </main>
     <footer>
-        <p>Contacto: samueljecheverria0717@gmail.com | Teléfono: +593 600 000 000</p>
+        <p>
+            <img class="footer-icon" src="img/gmail-icon-transparent-free-png.webp" alt="Gmail icon">
+            <a href="mailto:samueljecheverria0717@gmail.com">samueljecheverria0717@gmail.com</a>
+            | 
+            <img class="footer-icon" src="img/free-linkedin-icon-svg-download-png-1597570.webp" alt="LinkedIn icon">
+            <a href="https://www.linkedin.com/in/samuel-echeverria-moreno-b37b87314" target="_blank" rel="noreferrer">Samuel Echeverría</a>
+            | Teléfono: +593 600 000 000
+        </p>
     </footer>
+    <script>
+        const map = L.map('map').setView([-2.170998, -79.922359], 12);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        L.marker([-2.170998, -79.922359]).addTo(map)
+            .bindPopup('Guayaquil, Ecuador')
+            .openPopup();
+    </script>
 </body>
 
 </html>
